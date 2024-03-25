@@ -64,11 +64,12 @@ body{
     height: 57rem;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main_section .hero{
     width: 521px;
-    height: 700px;
+    height: 680px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -76,12 +77,18 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .hero li{
+    margin-top: 5px;
     list-style: none;
 }
+
+.hero .login_hr{
+    width: 100%;
+    text-align: center;
+}
+
 
 .login_name{
     color: #3B3838;
@@ -89,6 +96,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
+    margin: 30pxs;
 }
 
 .login_name span{

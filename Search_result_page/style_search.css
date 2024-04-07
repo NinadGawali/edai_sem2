@@ -1,0 +1,224 @@
+html{
+    background-color: #f7f7f7;
+}
+
+    body{
+        margin: 0px;
+    }
+    
+    li{
+        list-style-type: none;
+    }
+    
+    /* Making the Nav Bar using FlexBox */
+        .nav_bar{
+            display: flex;
+            height: 7rem;
+            background-color: white;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            /* flex-basis: 100px; */
+        }
+            .logo{
+                color: #FF3F6C;
+                font-size: 32px;
+                font-family: "Praise", cursive;
+                font-weight: 400;
+                font-style: normal;
+                align-self: flex-start;
+                /* margin-top: 10px; */
+            }
+
+            .logo > h2{
+                margin-top: 15px;
+                
+            }
+            .capS{
+                font-size: 64px;
+            }
+
+            .nav_bar div{
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 20px;
+                color: #3B3838;
+                padding: 10px;
+            }
+
+            .nav-links:hover {
+                color: #ff3f6c;
+                cursor : pointer;
+                font-weight: 550;
+            }
+
+            .search input[type="text"]{
+                font-size: 20px;
+                color: #3B3838;
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                width: 429px;
+                height: 52px;
+                border: solid 0.3px #777575;
+                border-radius: 2%;
+
+            }
+
+        #filter_title{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            padding-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-bottom: solid 0.6px #A5A5A5;
+        }
+
+            #filter_title span{
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                color: #3B3838;
+                font-size: 28px;
+            }
+
+        #main_sec{
+            display: grid;
+            height: 77.83vh;
+            margin-left: 20px;
+            margin-right: 20px;
+            grid-template-columns: 1fr 8fr;
+        }
+
+            #filter_sec{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-right: solid 0.6px #A5A5A5;
+            }
+            
+                .filters{
+                    margin-top: 20px;
+                    margin: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    gap: 8px;
+                    
+                }
+
+                    .filter_name span{
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: 20px;
+                        color: #3B3838;
+                    }
+
+                    .filter_op{
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+                    }
+
+                        .filter_op span{
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            font-size: 18px;
+                            color: #3B3838;
+                            cursor: pointer;
+                            display: flex;
+                            gap: 4px;    
+                        }
+
+                        .filter_op input[type="checkbox"]{
+                            cursor: pointer;
+                            opacity: 0;
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            
+                        }
+
+                        .filter_op span::before{
+                            content: '';
+                            width: 20px;
+                            height: 20px;
+                            /* border: 2px solid #939393; */
+                            border-radius: 5px;
+                            margin-right: 5px;
+                            background-color: #c2c2c2;
+                        }
+
+                        .filter_op span:hover::before,
+                        .filter_op input[type="checkbox"]:hover + span::before{
+                            background-color: #d3d3d3;
+                            /* border: 2.2px solid #FFFFFF; */
+                    
+                        }
+
+                        .filter_op span:hover,
+                        .filter_op input[type="checkbox"]:hover + span{
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 450;
+                            font-style: bold;
+                            font-size: 18px;
+                        }
+
+                        .filter_op input[type="checkbox"]:checked + span::before{
+                            background-color: #FF3F6C;
+                            /* border: 2.2px solid #939393; */
+                            content: '\2713';
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); */
+                        }
+
+                        .filter_op input[type="checkbox"]:checked + span{
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 450;
+                            font-style: normal;
+                            font-size: 18px;
+                            color: #3B3838;
+                            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+                        }
+
+
+                #filter_sec hr{
+                    border-top: 0.5px solid #A5A5A5;
+                    width: 100%;
+                }
+
+            #hero_sec
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1r 1fr;
+                padding: 30px;
+                gap: 30px;
+                justify-items: center;
+            }
+
+                .search_result{
+                    height: 365px;
+                    width: 256px;
+                    background-color: #FFFFFF;
+                    border: solid 0.6px #A5A5A5;
+                    border-radius: 5px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+                }
+        
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+html{
+    background-color: #F5F5F5;
+}
+
+li{
+    list-style: none;
+}
+    body{
+        margin: 0px;
+    }
+    /* Make a navigation Bar set as flex.
+    Justify content : space around sides of window
+    align-items to center in vertical */
+        .nav_bar{
+            display: flex;
+            height: 7rem;
+            background-color: white;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            /* flex-basis: 100px; */
+        }
+            .logo{
+                color: #FF3F6C;
+                font-size: 32px;
+                font-family: "Praise", cursive;
+                font-weight: 400;
+                font-style: normal;
+                align-self: flex-start;
+                /* margin-top: 10px; */
+            }
+
+            .logo > h2{
+                margin-top: 15px;
+                
+            }
+            .capS{
+                font-size: 64px;
+            }
+
+            .nav_bar div{
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 20px;
+                color: #3B3838;
+                padding: 10px;
+            }
+
+            .nav-links:hover {
+                color: #ff3f6c;
+                cursor : pointer;
+                font-weight: 550;
+            }
+
+            .search input[type="text"]{
+                font-size: 20px;
+                color: #3B3838;
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                width: 429px;
+                height: 52px;
+                border: solid 0.3px #777575;
+                border-radius: 2%;
+
+            }
+
+            #filter_title{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 20px;
+                padding-top: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+                /* border-bottom: solid 0.6px #A5A5A5; */
+            }
+    
+                #filter_title span{
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                    color: #3B3838;
+                    font-size: 28px;
+                }
+
+                .align_main{
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+
+                #main_sec{
+                    display: grid;
+                    height: 77.83vh;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    grid-template-columns: 1fr 2fr;
+                    gap: 80px;
+                    margin-bottom: 20px;
+                }
+
+                    #main_sec .pics{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 350px 350px;
+                        gap: 20px;
+                        height: 710px;
+                    }
+
+                    .pics .pic{
+                        border-radius: 7px;
+                    }
+
+                    #main_sec .info_sec{
+                        background-color: #E5E5E5;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-around;
+                        padding-left: 40px;
+                        padding-top: 30px;
+                        width: 632px;
+                        height: 710px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 7px;
+                        
+                    }
+
+                        .info_sec #item_name{
+                            color: #3B3838;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 600;
+                            font-style: normal;
+                            font-size: 24px;
+                        }
+
+                        .info_sec #item_brand{
+                            color: #3B3838;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-size: 20px;
+                        }
+
+                        .info_sec .matching{
+                            color: #3B3838;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: 22px;  
+                        }
+
+                        .info_sec .filter_matched{
+                            color: #3B3838;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-size: 20px;
+                            display: flex;
+                            gap: 50px;
+                        }
+
+                        .info_sec .filter_not_matched{
+                            color: #3B3838;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-size: 20px;
+                            display: flex;
+                            gap: 50px;
+                        }
+
+                        .filter_matched span{
+                            color: #3B3838;
+                            display: flex;
+                            gap: 4px;
+                        }
+
+                        
+                        .filter_not_matched span{
+                            color: #3B3838;
+                            display: flex;
+                            gap: 4px;
+                        }
+
+                        .filter_percent{
+                            color: #3B3838;
+                            font-size: 22px;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            
+                        }
+
+                        .filter_percent span{
+                            color: #00AC11;
+                        }
+
+                        .buy_button .button{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 10px;
+                            gap: 10px;
+                            background: #00AC11;
+                            border-radius: 5px;
+                            width: 600px;
+                            height: 57px;
+                            border: none;
+                            cursor: pointer;
+                            box-shadow: 0 3px #999;
+                        }
+                        .button:hover {background-color: #008e0e}
+                
+                        .button:active {
+                            background-color: 008e0e;
+                            box-shadow: 0 1px #666;
+                            transform: translateY(4px);
+                        }
+                
+                        .button span{
+                            color: #FFFFFF;
+                            font-size: 24px;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 600;
+                            font-style: normal;
+                        }
+
+
+
+
